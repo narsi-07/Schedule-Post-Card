@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="schedule-post-card">
+        <button class="close-btn">&times;</button>
+        <h2 class="Scheduleh1">Schedule Post</h2>
+        <div class="platform-icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2UwbWBTArdI30zBsPeIsr3zA3TxGnhRS-_1AeHZN6Q&s" alt="Platform 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2UwbWBTArdI30zBsPeIsr3zA3TxGnhRS-_1AeHZN6Q&s" alt="Platform 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2UwbWBTArdI30zBsPeIsr3zA3TxGnhRS-_1AeHZN6Q&s" alt="Platform 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2UwbWBTArdI30zBsPeIsr3zA3TxGnhRS-_1AeHZN6Q&s" alt="Platform 4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2UwbWBTArdI30zBsPeIsr3zA3TxGnhRS-_1AeHZN6Q&s" alt="Platform 5">
+        </div>
+        <h1 class="textlowcolor">Select Date:</h1>
+        <input type="date" id="date" name="date">
+        
+        <h1 class="textlowcolor">Select Time:</h1>
+        <div class="time-select">
+            <select class="hours" id="hours" name="hours">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="01">03</option>
+                <option value="02">04</option>
+                <option value="01">05</option>
+                <option value="02">06</option>
+                <option value="01">07</option>
+                <option value="02">08</option>
+                <option value="01">09</option>
+                <option value="02">10</option>
+                <option value="01">11</option>
+                <option value="02">12</option>
+            </select>
+            <select class="minutes" id="minutes" name="minutes">
+                <option value="00">00</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+                <option value="45">45</option>
+            </select>
+            <select class="ampm" id="ampm" name="ampm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+        <h1 class="Recommends">Recommended times</h1>
+        <div class="recommended-times">
+            <p>India (GMT+5:30)</p>
+            <ul>
+                <li>09:00 am - 10:00 am</li>
+                <li>12:00 pm - 01:00 pm</li>
+                <li>03:00 pm - 04:00 pm</li>
+                <li>08:00 pm - 09:00 pm</li>
+            </ul>
+        </div>
+        
+        <button id="done">Done</button>
+    </div>
+    <script>
+        document.getElementById('done').addEventListener('click', () => {
+            alert('Post scheduled successfully!');
+        });
+        
+        // Close button functionality
+        document.querySelector('.close-btn').addEventListener('click', () => {
+            document.querySelector('.schedule-post-card').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

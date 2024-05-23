@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffece6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.schedule-post-card {
+    position: relative; /* Add this to enable positioning of the close button */
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-top: 1%;
+    width: 270px;
+    text-align: center;
+}
+
+.Scheduleh1 {
+    text-align: left;
+    font-size: 13px;
+}
+
+.close-btn {
+position: absolute; /* Position the close button */
+top: 10px; /* Adjust as needed */
+right: 10px; /* Adjust as needed */
+background: transparent;
+border: 1px solid rgb(227, 223, 223); /* Add black border */
+border-radius: 50%; /* Make it circular */
+font-size: 18px; /* Adjust font size to fit within the circle */
+cursor: pointer;
+width: 20px; /* Fixed width to maintain circular shape */
+height: 20px; /* Fixed height to maintain circular shape */
+display: flex; /* Center the 'x' inside the button */
+align-items: center; /* Center the 'x' vertically */
+justify-content: center; /* Center the 'x' horizontally */
+line-height: 1; /* Ensure no extra line height affects centering */
+padding: 0; /* Remove any default padding */
+}
+
+
+
+
+.schedule-post-card h2 {
+    color: #333;
+}
+
+.platform-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.platform-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ff5722;
+    font-weight: bold;
+}
+
+input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    color: white;
+    background-color: #ff5722;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: white;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.time-select {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.hours {
+    height: 42px;
+    width: 80px;
+    border-radius: 30px;
+    background-color: #ffc8b465;
+    border: 1.3px solid #e17756;
+    color: #c9512c;
+}
+
+.hours option {
+    background-color: white;
+}
+
+.minutes {
+    height: 42px;
+    width: 80px;
+    border-radius: 30px;
+    background-color: #ffc8b465;
+    border: 1.3px solid #e17756;
+    color: #c9512c;
+}
+
+.minutes option {
+    background-color: white;
+}
+
+.ampm {
+    height: 42px;
+    width: 80px;
+    border-radius: 30px;
+    background-color: #ffc8b465;
+    border: 1.3px solid #e17756;
+    color: #c9512c;
+}
+
+.ampm option {
+    background-color: white;
+}
+
+.recommended-times {
+    text-align: left;
+    font-size: 10px;
+}
+
+.recommended-times p {
+    margin: 0;
+    font-weight: bold;
+    color: #666;
+}
+
+.Recommends {
+    font-size: 15px;
+    text-align: left;
+}
+
+.recommended-times ul {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid rgb(160, 155, 155);
+}
+
+.recommended-times li {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    color: rgb(255, 115, 0);
+    border-radius: 5px;
+    margin: 1px 0;
+}
+
+.textlowcolor {
+    font-size: 10px;
+    font-weight: bold;
+    color: #666;
+    text-align: left;
+    margin-top: 22px;
+}
+
+#done {
+    width: 230px;
+    background: #2b2a2a;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#done:hover {
+    background: #000000;
+}
